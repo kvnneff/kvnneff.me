@@ -1,0 +1,91 @@
+body {
+  font-family: 'Lato', helvetica, sans-serif;
+  margin:5px;
+}
+
+a,
+a:visited {
+  color: rgb(51, 153, 255);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(1, 103, 205);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Biryani', helvetica, sans-serif;
+  margin:0;
+}
+
+.Header,
+.Navigation,
+.Main {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.Header {
+  border-bottom:1px solid #E4E4E4;
+}
+
+.Header-title {
+  margin-bottom: 0;
+}
+
+.Main {
+  margin-top: 20px;
+}
+
+.Main-paragraph:first-of-type {
+  margin-top: 0;
+}
+
+.Main-profilePhoto {
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.Navigation {
+  display: block;
+  margin-top: 5px;
+}
+
+.Navigation-links {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+.Navigation-links a {
+  margin-right: 10px;
+  display: inlin-block;
+}
+
+.Icon {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 26px;
+  height: 26px;
+  background-position: center center;
+  background-size: contain;
+}
+
+.Icon:hover {
+  opacity: 0.6;
+}
+
+.Icon--github {
+  background-image: url('./icons/GitHub-Mark-32px.png');
+}
+
+.Icon--twitter {
+  background-image: url('./icons/Twitter-mark.png');
+}
