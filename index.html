@@ -8,101 +8,102 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header class="Header">
-    <h1 class="Header-title">Kevin Neff</h1>
-  </header>
-  <navigation class="Navigation">
-    <span class="Navigation-links">
-      <a href="#about">about</a>
-      <a href="#projects">projects</a>
-      <a href="#contact">contact</a>
-      <a href="https://github.com/kvnneff">github</a>
-      <a href="https://twitter.com/kvnneff">twitter</a>
-    </span>
-    <!-- <span class="Icon Icon--github"></span>
-    <span class="Icon Icon--twitter"></span> -->
-  </navigation>
-  <main class="Main">
-    <h2 id="about" class="Main-sectionTitle">About</h2>
-    <img class="Main-profilePhoto" src="img/me_second.jpg" alt="">
-    <p class="Main-paragraph">
-      I'm a front-end and node.js developer living on a small homestead in
-      rural Williams, OR.
-    </p>
+  <div class="Container">
+    <nav class="Navigation">
+      <div class="Navigation-head">
+        <div class="Navigation-photoContainer">
+          <img class="Navigation-profilePhoto" src="img/me_second.jpg" alt="">
+        </div>
+        <span class="Navigation-name">Kevin Neff</span>
+        <a href="mailto:kvnneff@gmail.com">kvnneff@gmail.com</a>
+        <p>
+        <a href="https://github.com/kvnneff"<span class="Icon Icon--github"></span></a>
+        <a href="https://twitter.com/kvnneff"><span class="Icon Icon--twitter"></span></a>
+      </div>
+    </nav>
+    <main class="Main" role="main">
+      <h1 class="Main-title">Resume</h1>
 
-    <p class="Main-paragraph">
-      In 2008 I joined <a href="https://brownpapertickets.com">Brown Paper Tickets</a> as a weekend call-center representative
-      and over the years pushed myself to learn and grow, advancing into titles
-      such as Client Services Representative, Client Tech Support Representative,
-      Client Tech Support Manager, Office Tech Support Representative and
-      eventually I became a self-taught Full-Stack Developer.
-    </p>
+      <h2>Key Skills</h2>
+        <ul>
+          <li>Javscript</li>
+          <li>node.js</li>
+          <li>PostgreSQL</li>
+          <li>TCL</li>
+        </ul>
 
-    <p class="Main-paragraph">
-      For my last 3 years at Brown Paper Tickets I participated within a small
-      team of developers and designers that worked to improve and expand the
-      front-end and back-end of the Brown Paper Tickets website.  I worked with
-      TCL and PostgreSQL on the server and HTML, CSS and Javascript on the
-      client side of things.
-    </p>
+      <h2>Profile</h2>
 
-    <p class="Main-paragraph">
-      In my down time I experimented with node.js and a more modular approach
-      to coding and became hooked.  I had an idea to create a graphical user
-      interface that would allow Brown Paper Tickets employees to easily create
-      new seating charts for venues, a process that had previously been done by
-      entering hundreds of rows of data manually into a spreadsheet and could
-      take a single employee multiple days to finish.
-    </p>
+      <p>
+        I'm a front-end and node.js developer with 3 years of professional experience.
+      </p>
 
-    <p class="Main-paragraph">
-      Given full-reign to pursue this side project on my own, I leveraged the
-      power of node.js, npm, and front-end packagers such as <a href="http://browserify.org/">Browserify</a>
-      and <a href="http://duojs.org/">Duo</a> to create an HTML5 Canvas point & click interface that enabled
-      Brown Paper Tickets employees to lay out a seating chart, name the rows
-      and seats and calculate seat desirability in under an hour, saving Brown
-      Paper Tickets hundreds of man-hours.
-    </p>
+      <h2>Education</h2>
+      <p>
+        I am entirely self-taught.  Most of what I've learned has come from reading the source code of others (Github is a wonderful resource), and asking questions via StackOverflow.
+      </p>
 
-    <p class="Main-paragraph">
-      In 2015 I left Brown Paper Tickets to seek out more opportunities to work
-      with codebases and projects that utilize Javascript and modularity on both
-      the back-end and front-end.
-    </p>
+      <h2>Work History</h2>
+      <h4>Civic Maker Lab (June 2015 - July 2015)</h4>
 
-    <p>
-      In my free time I enjoy lifting weights, hunting, gardening, raising
-      chickens and rabbits, and dungeon mastering a
-      <a href="http://schwalbentertainment.com/shadow-of-the-demon-lord/">Shadow of the Demon Lord</a>
-      campaign for friends.
-    </p>
+      <p>
+        I was contracted by <a href="http://civicmakerlab.com/">Civic Maker Lab</a> to create an open-source plugin for their CMS <a href="https://github.com/civicmakerlab/township">Township</a>. The plugin allows Township authors to upload media files to be embedded in
+        posts and has the capability to store the files either to the server's
+        file system or to an AWS S3 bucket.
+      </p>
 
-    <h2 id="projects" class="Main-sectionTitle">Recent Projects</h2>
+      <p>
+        The plugin has been open-sourced on Github: <a href="https://github.com/kvnneff/township-media">township-media</a>
+      </p>
 
-    <h3><a href="https://github.com/kvnneff/bloxparty">Blox Party</a></h3>
 
-    <p class="Main-paragraph">
-      A multiplayer Tetris game built with <a href="https://github.com/dekujs/deku">Deku</a>
-      (a React-like framework), Browserify and <a href="https://github.com/atom/electron">Electron</a>.
-      I created this in my free time in order to experiment with Web Sockets.
-      Players connect to a centralized server which receives data from each
-      connected client and redistributes that data to keep the game in sync.
-    </p>
+      <h4>Brown Paper Tickets (2008 - 2015)</h4>
+      <p>
+        <strong>Technologies:</strong> TCL, PostgreSQL, Javascript, CSS, node.js
+      </p>
 
-    <h3><a href="https://github.com/kvnneff/township-media">Township Media</a></h3>
+      <p>
+        In 2008 I joined <a href="https://brownpapertickets.com">Brown Paper Tickets</a> as a weekend call-center representative and over the years pushed myself to learn and grow, advancing into positions the positions of Client Services Representative, Client Tech Support Representative,
+        Client Tech Support Manager, Office Tech Support Representative and
+        eventually I became a self-taught front-end and TCL developer.
+      </p>
 
-    <p class="Main-paragraph">
-      I was contracted by <a href="http://civicmakerlab.com/">Civic Maker Lab</a>
-      to create a plugin for their CMS <a href="https://github.com/civicmakerlab/township">Township</a>.
-      The plugin allows Township authors to upload media files to be embedded in
-      posts and has the capability to store the files either to the server's
-      file system or to an AWS S3 bucket.
-    </p>
+      <p>
+        My last 3 years at Brown Paper Tickets were spent within a small
+        team of developers and designers that worked to improve and expand the
+        front-end and back-end of the Brown Paper Tickets website.  I worked with TCL and PostgreSQL on the server and HTML, CSS and Javascript on the front-end.
+      </p>
 
-    <h2 id="contact">Contact</h2>
-    <p class="Main-paragraph">
-      <a href="mailto:kvnneff@gmail.com">kvnneff@gmail.com</a>
-    </p>
-  </main>
+      <p>
+        In my down time I experimented with node.js although it was not currently used in any capacity at the company I proposed creating an app with it that would allow Brown Paper Tickets employees to easily create new seating charts for venues, a process that had previously been done by entering hundreds of rows of data manually into a spreadsheet and could take a single employee multiple days to finish.
+      </p>
+
+      <p>
+        I was given full-reign to pursue this project on my own an created an HTML5 Canvas point & click interface that enabled Brown Paper Tickets employees to lay out a seating chart, quickly apply meta-data to individual rows and seats, and use a Euclidean algorythm to automatically generate seat desirability.
+      </p>
+
+      <p>
+        The app was powered by a node.js server that stored the finished seating charts in a CouchDB database.
+      </p>
+
+      <p>
+        Once the app was solid and stable I left Brown Paper Tickets to pursure more opportunities to work with node.js and modular front-end code.
+      </p>
+
+      <h2>Other Interests</h2>
+      <p>
+        Lifting weights, hunting, gardening, raising chickens and rabbits, and dungeon mastering a <a href="http://schwalbentertainment.com/shadow-of-the-demon-lord/">Shadow of the Demon Lord</a> campaign for friends.
+      </p>
+
+      <h2 id="projects" class="Main-sectionTitle">Personal Projects</h2>
+
+      <h3><a href="https://github.com/kvnneff/bloxparty">Blox Party</a></h3>
+
+      <p>
+        A multiplayer Tetris game built with <a href="https://github.com/dekujs/deku">Deku</a>
+        (a React-like framework), Browserify and <a href="https://github.com/atom/electron">Electron</a>. I created this in my free time in order to experiment with Web Sockets. Players connect to a centralized server which receives data from each connected client and redistributes that data to keep the game in sync.
+      </p>
+    </main>
+  </div>
 </body>
 </html>
