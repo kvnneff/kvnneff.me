@@ -4,56 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kevin Neff</title>
-  <link href='https://fonts.googleapis.com/css?family=Biryani:400,700|Lato' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://npmcdn.com/tachyons@4.0.4/css/tachyons.min.css"/>
+  <style>
+    a {
+      color: #006C71;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #005C79;
+      text-decoration: underline;
+    }
+
+    hr {
+      border: 0;
+      background-color: #e4e4e4;
+      height: 1px;
+    }
+  </style>
 </head>
-<body>
-  <div class="Container">
-    <nav class="Navigation">
-      <div class="Navigation-head">
-        <div class="Navigation-photoContainer">
-          <img class="Navigation-profilePhoto" src="img/me.jpeg" alt="">
-        </div>
-        <span class="Navigation-name">Kevin Neff</span>
-        <a href="mailto:kvnneff@gmail.com">kvnneff@gmail.com</a>
-        <p>
-        <a href="https://github.com/kvnneff"<span class="Icon Icon--github"></span></a>
-        <a href="https://twitter.com/kvnneff"><span class="Icon Icon--twitter"></span></a>
-      </div>
-    </nav>
-    <main class="Main" role="main">
-      <h1 class="Main-title">Resume</h1>
+<body class="helvetica">
+  <header class="tc pv4 pv5-ns">
+    <img src="img/me.jpeg" alt="Photo of Kevin Neff" class="br-100 pa1 ba b--black-10 h4 w4">
+    <h1 class="f5 f4-ns fw6 mid-gray">Kevin Neff</h1>
+    <h2 class="f6 gray fw2 ttu tracked">Web Developer</h2>
+    <span class="gray">kvnneff@gmail.com</span>
+  </header>
+  <main class="center mw7 lh-copy ph4 pb4">
 
-      <h2>Key Skills</h2>
-        <ul>
-          <li>Javscript</li>
-          <li>node.js</li>
-          <li>PostgreSQL</li>
-          <li>TCL</li>
-          <li>HTML5</li>
-          <li>CSS</li>
-        </ul>
+    <div>
+      <h2>About</h2>
+      <p>
+        I'm a web developer living on a farm in Williams, Oregon.  I make web
+        applications, usually with Node.js but sometimes with TCL.  I'm available for hire
+        on a freelance basis.
+      </p>
+      <p>
+        View my <a href="https://github.com/kvnneff/">Github profile</a>.
+      </p>
+    </div>
 
-      <h2>Profile</h2>
+
+    <div>
+      <h2>Skills</h2>
+      <ul class="list pa0">
+        <li><span class="b">Programming Languages:</span> Javascript / Node.js, TCL</li>
+        <li><span class="b">Technologies:</span> git, PostgreSQL, Continuous Integration / Continuous Deployment</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Experience</h2>
+      <ul class="list pa0">
+        <li><span class="b f5">Brown Paper Tickets</span>, Seattle, WA (remote)</li>
+        <li class="f6">May 2016 - July 2016</li>
+        <li class="f6">Contract Developer</li>
+      </ul>
 
       <p>
-        I'm a front-end and node.js developer with 3 years of professional experience.
+        <strong>Technologies used:</strong> TCL, PostgreSQL
       </p>
 
-      <h2>Education</h2>
       <p>
-        I am self-taught.  Most of what I've learned has come from reading the source code of other developers on Github, and asking questions on StackOverflow.
-      </p>
-
-      <h2>Work History</h2>
-      <h4>Civic Maker Lab (June 2015 - July 2015)</h4>
-      <p>
-        <strong>Technologies:</strong> node.js, AWS S3
+        I was tasked with writing the back-end code for a new event approval
+        system that ran 60+ checks against a newly submitted event.  Events
+        were previously checked manually by Brown Paper Tickets staffers.
       </p>
 
       <p>
-        I was contracted by <a href="http://civicmakerlab.com/">Civic Maker Lab</a> to create an open-source plugin for their CMS <a href="https://github.com/civicmakerlab/township">Township</a>. The plugin allows Township authors to upload media files to be embedded in
+        The new event approval system runs a series of checks against the event
+        data and records both the aggregate of the results as well as individual
+        results of each test in PostgreSQL.
+      </p>
+
+      <p>
+        I also wrote JSON api routes that would allow Brown Paper Tickets staff to
+        trigger the running of the checks, view the check results, as well as
+        override the results.
+      </p>
+
+      <p>
+        Although it was not required I wrote unit tests for each check in order
+        to ease testing and verify that the checks returned valid results.
+      </p>
+
+      <hr>
+
+      <ul class="list pa0">
+        <li><span class="b f5">City Arcade</span>, Seattle, WA (remote)</li>
+        <li class="f6">February 2016 - April 2016</li>
+        <li class="f6">Contract Developer</li>
+      </ul>
+
+      <p>
+        <strong>Technologies used:</strong> Javascript
+      </p>
+
+      <p>
+        I worked on City Arcade's project <a href="https://editdata.org/">EditData</a>
+        project, refactoring the codebase to use their React/Redux-like framework
+        <a href="https://github.com/sethvincent/virtual-app">virtual-app</a>
+      </p>
+
+      <p>
+        The EditData project is open-source and available on Github:
+        <a href="https://github.com/editdata">https://github.com/editdata</a>
+      </p>
+    </div>
+
+    <hr>
+
+    <div>
+      <ul class="list pa0">
+        <li><span class="b f5">City Arcade</span>, Seattle, WA (remote)</li>
+        <li class="f6">June 2015 - July 2015</li>
+        <li class="f6">Contract Developer</li>
+      </ul>
+      <p>
+        <strong>Technologies used:</strong> Node.js, AWS S3, Continuous Integration via TravisCI
+      </p>
+
+      <p>
+        I Created an open-source plugin for their CMS <a href="https://github.com/township">Township</a>.
+        The plugin allows Township authors to upload media files to be embedded in
         posts and has the capability to store the files either to the server's
         file system or to an AWS S3 bucket.
       </p>
@@ -61,51 +134,84 @@
       <p>
         The plugin has been open-sourced on Github: <a href="https://github.com/kvnneff/township-media">township-media</a>
       </p>
+    </div>
 
+    <hr>
 
-      <h4>Brown Paper Tickets (2008 - 2015)</h4>
+    <div>
+      <ul class="list pa0">
+        <li><span class="b f5">Brown Paper Tickets</span>, Seattle, WA (on-site)</li>
+        <li class="f6">August 2012 - May 2015</li>
+        <li class="f6">Software Developer</li>
+      </ul>
+
       <p>
-        <strong>Technologies:</strong> TCL, PostgreSQL, Javascript, CSS, node.js
+        <strong>Technologies:</strong> TCL, PostgreSQL, Javascript, Node.js
       </p>
 
       <p>
-        In 2008 I joined <a href="https://brownpapertickets.com">Brown Paper Tickets</a> as a weekend call-center representative and over the years pushed myself to learn and grow, advancing into the positions of Client Services Representative, Client Tech Support Representative,
-        Client Tech Support Manager, Office Tech Support Representative and
-        eventually I was asked to join the development team.
+        In 2008 I joined <a href="https://brownpapertickets.com">Brown Paper Tickets</a>
+        as a weekend call-center representative and over the years pushed myself
+        to learn and grow.  I advanced into the positions of Client Services
+        Representative, Client Tech Support Representative, Client Tech Support
+        Manager, and Office Tech Support Representative before I was asked to join
+        the development team.
       </p>
 
       <p>
         My last 3 years at Brown Paper Tickets were spent within a small
         team of developers and designers that worked to improve and expand the
-        front-end and back-end of the Brown Paper Tickets website.  I worked with TCL and PostgreSQL on the server and HTML, CSS and Javascript on the front-end.
+        front-end and back-end of the Brown Paper Tickets website.  I worked
+        with TCL and PostgreSQL on the server and HTML, CSS and Javascript on
+        the front-end.
       </p>
 
       <p>
-        In my down time I experimented with node.js and ended up proposing an app that would allow Brown Paper Tickets employees to easily create new seating charts for venues, a process that had previously been done by entering rows of data manually into a spreadsheet and could take a single employee multiple days to finish.
+        In my down time I experimented with Node.js and created a proposal for
+        an app that would allow Brown Paper Tickets employees to easily create
+        new seating charts for venues, a process that had previously been done
+        by entering rows of data manually into a spreadsheet and would take a
+        single employee multiple days to finish.
       </p>
 
       <p>
-        I was given full-reign to pursue this project on my own and created an HTML5 Canvas point & click interface that enabled Brown Paper Tickets employees to lay out a seating chart, quickly apply meta-data to individual rows and seats, and use a Euclidean algorythm to automatically generate seat desirability.
+        I was given full-reign to pursue this project on my own and created an
+        HTML5 Canvas point & click interface that enabled Brown Paper Tickets
+        employees to quickly lay out a seating chart, apply meta-data to
+        individual rows and seats, and use a Euclidean algorythm to automatically
+        generate seat desirability.
       </p>
 
       <p>
-        The app was powered by a node.js server that stored the finished seating charts in a CouchDB database.  The app state was distributed to each connected client using PouchDB/CouchDB's replication features so updates to a chart's data could be viewed in real-time.
+        The app was powered by a Node.js server that stored the finished seating
+        charts in a CouchDB database.  The app state was distributed to each
+        connected client using PouchDB/CouchDB's replication features so updates
+        to a chart's data could be viewed by others in real-time.
       </p>
+    </div>
 
+    <div>
       <h2>Other Interests</h2>
       <p>
-        Hunting, hiking, gardening, raising chickens and rabbits, and dungeon mastering tabletop RPG games for friends.
+        Hunting, hiking, gardening, raising chickens and rabbits, and dungeon
+        mastering tabletop RPG games for friends.
       </p>
+    </div>
 
-      <h2 id="projects" class="Main-sectionTitle">Personal Projects</h2>
+    <div>
+      <h2>Personal Projects</h2>
 
-      <h3><a href="https://github.com/kvnneff/bloxparty">Blox Party</a></h3>
+      <h3>
+        <a href="https://github.com/bloxparty">
+          Blox Party
+        </a>
+      </h3>
 
       <p>
         A multiplayer falling blocks game built with <a href="https://github.com/dekujs/deku">Deku</a>
         (a React-like framework) and Browserify. I created this in my free time in order to teach myself more about Web Sockets and React-inspired frameworks. Players connect to a centralized server which receives data from each connected client and redistributes that data to keep the games in sync.
       </p>
-    </main>
-  </div>
+    </div>
+  </main>
 </body>
 </html>
